@@ -1,7 +1,7 @@
 local key = KEYS[1]
 local limit = tonumber(KEYS[2])
 local length = tonumber(KEYS[3])
-redis.log(redis.LOG_NOTICE,' length: '..length)
+--redis.log(redis.LOG_NOTICE,' length: '..length)
 local current = redis.call('GET', key)
 if current == false then
    --redis.log(redis.LOG_NOTICE,key..' is nil ')
